@@ -17,6 +17,8 @@ The interception is operated by a floating drone, onboarding a raspberry Pi. Tha
 You can run this project on your computer. There is video in the folder `ressources` to help you.
 If you want to operate the system on a live video, you will have to change the `video_Feed` variable in the `main.py` file.
 
+![Alt Text](https://yuwpxekhcyxqobbumhuc.supabase.co/storage/v1/object/public/Wastecoast/Images/IMG_6472.png)
+
 ## Installation
 
 create a virtual environment
@@ -35,4 +37,13 @@ install the dependencies
 
 ```bash
 pip install -r requirements.txt
+```
+
+## Usage
+
+run the main file, you can change the video feed in the main file.
+Also, you need to change the Affine Markers Matrix in the `main.py` file to match your video feed.
+
+```bash
+python3 main.py
 ```
