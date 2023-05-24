@@ -53,4 +53,4 @@ Those are tricky to set up, there will soon be a UI tool to help you set them up
 python3 main.py
 ```
 
-Misc you can also have a look at this project that aims to sort the wastes: [wastecoast-sorting]()
+Other files in the repository will help you operate the drone manually and transmit the command via wifi.
