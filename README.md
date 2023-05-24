@@ -12,7 +12,7 @@ Therefore the information can be passed down to the next tool in the chain which
 
 The detection of targets is the main task of this tool. Thanks to a camera placed under a bridge, operated by a raspberry Pi, the tool is able to detect targets and send the information. It gives the position of the target. The tool is also able to detect the flow of the water and the direction of it.
 
-![Shema](https://yuwpxekhcyxqobbumhuc.supabase.co/storage/v1/object/public/Wastecoast/Images/Schema.png)
+![Detection](https://yuwpxekhcyxqobbumhuc.supabase.co/storage/v1/object/public/Wastecoast/Images/Passage.png)
 
 ## Interception
 
