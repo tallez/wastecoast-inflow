@@ -18,10 +18,10 @@ The detection of targets is the main task of this tool. Thanks to a camera place
 
 The interception is operated by a floating drone, onboarding a raspberry Pi. Thanks to a it's design, the catamaran just have to float over the waste to capture it.
 
-You can run this project on your computer. There is video in the folder `ressources` to help you.
-If you want to operate the system on a live video, you will have to change the `video_Feed` variable in the `main.py` file.
-
 ![Drone Picture](https://yuwpxekhcyxqobbumhuc.supabase.co/storage/v1/object/public/Wastecoast/Images/IMG_6473%202.png)
+
+You can run this project on your computer.
+If you want to operate the system on a live video, you will have to change the `video_Feed` variable in the `main.py` file.
 
 ## Installation
 
