@@ -6,9 +6,13 @@ This repository is a part of the wastecoast project, which aims to collect autom
 The inflow tool aims to target the waste that is flowing into the water.
 Therefore the information can be passed down to the next tool in the chain which is a floating drone waiting downstream to intercept the waste.
 
+![Shema](https://yuwpxekhcyxqobbumhuc.supabase.co/storage/v1/object/public/Wastecoast/Images/Schema.png)
+
 ## Target Detection
 
 The detection of targets is the main task of this tool. Thanks to a camera placed under a bridge, operated by a raspberry Pi, the tool is able to detect targets and send the information. It gives the position of the target. The tool is also able to detect the flow of the water and the direction of it.
+
+![Shema](https://yuwpxekhcyxqobbumhuc.supabase.co/storage/v1/object/public/Wastecoast/Images/Schema.png)
 
 ## Interception
 
@@ -17,7 +21,7 @@ The interception is operated by a floating drone, onboarding a raspberry Pi. Tha
 You can run this project on your computer. There is video in the folder `ressources` to help you.
 If you want to operate the system on a live video, you will have to change the `video_Feed` variable in the `main.py` file.
 
-![Alt Text](https://yuwpxekhcyxqobbumhuc.supabase.co/storage/v1/object/public/Wastecoast/Images/IMG_6472.png)
+![Drone Picture](https://yuwpxekhcyxqobbumhuc.supabase.co/storage/v1/object/public/Wastecoast/Images/IMG_6473%202.png)
 
 ## Installation
 
@@ -47,3 +51,5 @@ Also, you need to change the Affine Markers Matrix in the `main.py` file to matc
 ```bash
 python3 main.py
 ```
+
+Misc you can also have a look at this project that aims to sort the wastes: [wastecoast-sorting]()

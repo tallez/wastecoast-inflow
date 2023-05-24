@@ -19,7 +19,7 @@ from flow_speed import *
 # Socket.connect((Host,Port))
 
 # B. Get video feed
-path_to_video = "/Users/thomas/Desktop/ROBÖ/V1/inflow-detection/ressources/Test_Video.MOV"
+path_to_video = "https://yuwpxekhcyxqobbumhuc.supabase.co/storage/v1/object/public/Wastecoast/Video/Reduced.mov?t=2023-05-24T14%3A29%3A51.919Z"
 # Put cv2.VideoCapture(1) to get livefeed from main camera.
 try:
     Video_Feed = cv2.VideoCapture(path_to_video)
@@ -41,10 +41,13 @@ except:
 # lb : x:107, y:1066 (LeftBottom)
 # Represent a rectangle on the field (10x70cm)
 
-lt = (252, 800)
-rt = (1653, 802)
-rb = (1824, 1073)
-lb = (107, 1066)
+deltaX = 2.8
+deltaY = 3
+
+lt = (252 / deltaX, 800 / deltaY)
+rt = (1653 / deltaX, 802 / deltaY)
+rb = (1824 / deltaX, 1073 / deltaY)
+lb = (107 / deltaX, 1066 / deltaY)
 
 Area_0f_Interest = [lt, rt, rb, lb]
 
@@ -91,7 +94,7 @@ while True:
     for cnt in Contours:
         # Calculate area and remove small elements
         area = cv2.contourArea(cnt)
-        if area > 500:
+        if area > 50:
             # cv2.drawContours(roi, [cnt], -1, (0, 255, 0), 2)
             x, y, w, h = cv2.boundingRect(cnt)
             Detections.append([x, y, w, h])
@@ -132,6 +135,7 @@ while True:
 
     # Demonstration
     cv2.imshow('Main', frame)
+    # cv2.imshow('Mask', Mask)
     cv2.imshow('Analysis', Affine_Warped_Frame)
 
     key = cv2.waitKey(30)
