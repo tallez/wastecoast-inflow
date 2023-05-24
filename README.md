@@ -46,7 +46,8 @@ pip install -r requirements.txt
 ## Usage
 
 run the main file, you can change the video feed in the main file.
-Also, you need to change the Affine Markers Matrix in the `main.py` file to match your video feed.
+Also, you need to change the Affine Markers Matrix in the `main.py` file to match your video feed nature and resolution.
+Those are tricky to set up, there will soon be a UI tool to help you set them up.
 
 ```bash
 python3 main.py
